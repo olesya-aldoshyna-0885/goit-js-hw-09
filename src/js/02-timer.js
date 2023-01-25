@@ -25,7 +25,7 @@ const options = {
   onClose: function (selectedDates) {
     if (selectedDates[0] <= new Date()) {
       // alert('Оберіь дату або час в майбутньому!');
-      Notify.failure('Choose a date or time in the future!');
+      Notify.failure('Please choose a date in the future!');
       refs.btnStart.setAttribute('disabled', true);
     } else {
       refs.btnStart.removeAttribute('disabled');
